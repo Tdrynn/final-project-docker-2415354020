@@ -98,11 +98,11 @@ docker volume inspect project-app_mysql-data
 Pada langkah ini dilakukan pengujian koneksi network dan container dengan mengakses aplikasi melalui browser untuk memastikan container aplikasi dapat berjalan dan saling terhubung dengan database.
 
 ```bash
-# Mengakses endpoint utama aplikasi
-localhost:3000/
+# Melihat daftar network Docker
+docker network ls
 
-# Mengakses endpoint users
-localhost:3000/users
+# Melihat daftar container yang berjalan
+docker ps -a
 ```
 
 ### Dokumentasi / Screenshot
@@ -120,11 +120,11 @@ localhost:3000/users
 Pada langkah ini dilakukan pengecekan network Docker dan container yang sedang berjalan untuk memastikan service aplikasi dan database aktif serta terhubung dengan baik.
 
 ```bash
-# Melihat daftar network Docker
-docker network ls
+# Mengakses endpoint utama aplikasi
+localhost:3000/
 
-# Melihat daftar container yang berjalan
-docker ps -a
+# Mengakses endpoint users
+localhost:3000/users
 ```
 
 ### Dokumentasi / Screenshot
